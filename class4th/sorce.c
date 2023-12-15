@@ -43,10 +43,10 @@ void main()
 	//	 frintf(출력할 내용)
 	// }
 
-	/*for (int i = 0; i < 5; i++)
+	/for (int i = 0; i < 5; i++)
 	{
 		printf("Hello World\n");
-	}*/
+	}/
 
 	// for문의 경우 조건이 끝나는 형태와 반대로 초기식을
 	// 연산하게 되면 조건이 일치하지 않아 계속 반복적으로

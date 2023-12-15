@@ -1,0 +1,7 @@
+﻿  sorce.c
+C:\Users\Administrator\Desktop\C-Language\class4th\sorce.c(46,2): error C2143: 구문 오류: ';'이(가) '/' 앞에 없습니다.
+C:\Users\Administrator\Desktop\C-Language\class4th\sorce.c(46,21): error C2065: 'i': 선언되지 않은 식별자입니다.
+C:\Users\Administrator\Desktop\C-Language\class4th\sorce.c(46,21): warning C4552: '<': 식의 결과가 사용되지 않습니다.
+C:\Users\Administrator\Desktop\C-Language\class4th\sorce.c(46,27): error C2065: 'i': 선언되지 않은 식별자입니다.
+C:\Users\Administrator\Desktop\C-Language\class4th\sorce.c(46,29): error C2143: 구문 오류: ';'이(가) ')' 앞에 없습니다.
+C:\Users\Administrator\Desktop\C-Language\class4th\sorce.c(49,3): error C2059: 구문 오류: '/'
