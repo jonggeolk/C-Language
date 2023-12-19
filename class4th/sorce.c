@@ -43,10 +43,10 @@ void main()
 	//	 frintf(출력할 내용)
 	// }
 
-	/for (int i = 0; i < 5; i++)
-	{
-		printf("Hello World\n");
-	}/
+	///for (int i = 0; i < 5; i++)
+	//{
+	//	printf("Hello World\n");
+	//}/
 
 	// for문의 경우 조건이 끝나는 형태와 반대로 초기식을
 	// 연산하게 되면 조건이 일치하지 않아 계속 반복적으로
@@ -57,10 +57,10 @@ void main()
 
 
 	// 1 ~ 5 사이의 값을 순서대로 출력하기
-	/*for (int i = 1; i <= 5; i++)
-	{
-		printf("%d",i);
-	}*/
+	//for (int i = 1; i <= 5; i++)
+	//{
+	//	printf("%d",i);
+	//}
 
 	// for (int i = 5; i >= 1; i--)
 	//{
@@ -69,14 +69,14 @@ void main()
 
 	// 1~10 까지의 합
 
-	/*int value = 0;
+	//int value = 0;
 
-		for (int i = 1; i <= 10; i++)
-		{
-			value = value + i;
-		}
+		//for (int i = 1; i <= 10; i++)
+		//{
+		//	value = value + i;
+		//}
 
-		printf("value의 값 : %d\n", value);*/
+		//printf("value의 값 : %d\n", value);
 #pragma endregion
 
 #pragma region 중첩 for문

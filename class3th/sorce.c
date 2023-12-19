@@ -48,6 +48,7 @@ void main()
 
 
 #pragma endregion
+
 #pragma region 조건문
 
 	// 어떤 조건이 주어질 때 해당 조건에 따라 동작을
