@@ -1,92 +1,76 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <stdlib.h>
- 
-enum Unit
-{   
-    // 열거형은 값을 따로 지정하지 않이면 가장 위에 있는 값은
-    // 0이라는 값으로 설정됩니다.
-    SKELETON,
-    SLIME = 15,
-    GOBLIN
+#include <string.h>
 
-    // 열거형에서 중간에 있는 값을 변경하게 되면 그 다음에 있는
-    // 값은 +1이 됩니다
-};
+#define WIDTH 11
+#define HEIGHT 11
 
-void CreateUnit(enum Unit unit)
+char maze[WIDTH][HEIGHT];
+
+void CreateMaze()
 {
-
-    switch (unit)
-    {
-    case SKELETON: printf("crate Skeleton\n");
-        break;
-    case SLIME: printf("crate Slime\n");
-        break;
-    case GOBLIN: printf("crate Goblin\n");
-        break;
-    }
+	// 0 : 빈공간 (" ")
+	// 1 : 볌 (□)
+	// 2 : 탈출구 (◎)
+	
+	strcpy(maze[0], "1111111111");
+	strcpy(maze[1], "1100111101");
+	strcpy(maze[2], "1110111001");
+	strcpy(maze[3], "1110011011");
+	strcpy(maze[4], "1111010011");
+	strcpy(maze[5], "1100000111");
+	strcpy(maze[6], "1101111111");
+	strcpy(maze[7], "1100000111");
+	strcpy(maze[8], "1111110111");
+	strcpy(maze[9], "1110000111");
+	strcpy(maze[10], "1110011111");
 }
+
+void Render()
+{
+	
+}
+//typedef struct student
+//{
+//	char name[10];
+//}student;
+//int main()
+//{
+//	student student;
+//
+//	student.name;
+//	// 첫 번째 매개변수
+//	// 복사받을 문자 배열을 넣어 줍니다.
+//
+//	// 두 번째 매개변수
+//	// 복사시킬 문자열을 넣어줍니다.
+//
+//	strcpy(student.name, "KIM");
+//
+//	printf("student.name의 값 : %s\n", student.name);
+//	
+//	strcpy(student.name, "G");
+//
+//	printf("student.name의 값 : %s\n", student.name);
+//
+//	return 0;
+//}
 int main()
 {
-#pragma region 포인터 배열
-    
-    //const char * string[3];
-    //// 8 byte 8 byte 8 byte
-    //// [   ]   [   ]   [   ]
-    ////
-    //// "Blue"  "Black"  "Green"  
+	int i = 0, j = 0;
 
-    //string[0] = "Blue";
-    //string[1] = "Black";
-    //string[2] = "Green";
-
-    //for (int i = 0; i < 3; i++)
-    //{
-    //    //printf("string[%d] : %p\n", i, string[i]);
-    //    printf("string[%d] : %s\n", i, string[i]);
-    //}
-
-#pragma endregion
-
-#pragma region 열거형
-    
-    //CreateUnit(SKELETON);
-    //CreateUnit(SLIME);
-    //CreateUnit(GOBLIN);
-
-    
-    
-
-#pragma endregion
-
-#pragma region 허상 포인터
-    // 이미 해제된 메모리 영역을 가리키는 포인터입니다.
-
-    //int * ptr = malloc(sizeof(4));
-
-    //*ptr = 999;
-
-    //printf("*ptr의 값 : %d\n", *ptr);
-    //
-    //free(ptr);
-
-    //ptr = NULL;
-
-    //if (ptr == NULL)
-    //{
-    //    ptr = malloc(sizeof(4));
-    //}
-
-    //*ptr = 235;
-
-    //printf("*ptr의 값 : %d\n", *ptr);
-
-    //free(ptr);
-
-
-#pragma endregion
-
-
-    return 0;
+	for (i = 0; i < 11; i++)
+	{
+		for (j = 0; j < 11; j++)
+			printf("maze[%c][%c] = %c\n", i, j, maze[i][j]);
+			printf("\n");
+	}
+	//for (int i = 0; i < 11; i++)
+	//{
+	//	for (int j = 0; j < 11; j++)
+	//	{
+	//		printf("maze[%c][%c] = %c\n", i, j, maze[i][j]);
+	//	}
+	//	return 0;
+	//}
 }
-
