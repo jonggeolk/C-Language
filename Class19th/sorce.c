@@ -96,33 +96,34 @@ void keyboard(char map[WIDTH][HEIGHT], Player* player)
             key = _getch();
         }
 
-      switch (key)
-      {
+        switch (key)
+        {
         case UP: if (maze[player->y - 1][player->x / 2] != '1')
-        
-         {    
+
+        {
             player->y--;
-         }
+        }
                break;
         case LEFT:if (maze[player->y][player->x / 2 - 1] != '1')
-         {
+        {
             player->x -= 2;
-         }
+        }
 
                  break;
         case RIGHT:if (maze[player->y][player->x / 2 + 1] != '1')
-         {
+        {
             player->x += 2;
-         }
+        }
                   break;
         case DOWN:if (maze[player->y + 1][player->x / 2] != '1')
-         {
+        {
             player->y++;
-         }
-                 break;   
-      }
+        }
+                 break;
+        }
 
-
+    }
+}
     //typedef struct student
     //{
     //	char name[10];
